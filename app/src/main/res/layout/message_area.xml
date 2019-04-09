@@ -2,7 +2,7 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/colorPrimaryDark"
+    android:background="@drawable/msged"
     android:gravity="bottom"
     android:orientation="horizontal">
 
@@ -10,6 +10,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_weight="1"
+        android:layout_marginLeft="5dp"
         android:textColorHint="#CFD8DC"
         android:textColor="#CFD8DC"
         android:hint="Write a message..."
