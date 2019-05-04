@@ -72,7 +72,7 @@ public class Register extends AppCompatActivity {
                                 pd.setMessage("Loading...");
                                 pd.show();
 
-                                String url = "https://androidchatapp-76776.firebaseio.com/users.json";
+                                String url = "https://chat-d4245.firebaseio.com/users.json";
 
                                 StringRequest request = new StringRequest(Request.Method.GET, url, new Response.Listener<String>(){
                                     @Override
@@ -89,6 +89,7 @@ public class Register extends AppCompatActivity {
 
                                                 if (!obj.has(user)) {
                                                     reference.child(user).child("password").setValue(pass);
+                                                    //image will be added there
                                                     Toast.makeText(Register.this, "registration successful", Toast.LENGTH_LONG).show();
                                                 } else {
                                                     Toast.makeText(Register.this, "username already exists", Toast.LENGTH_LONG).show();
