@@ -11,7 +11,7 @@
         android:layout_height="wrap_content"
         android:layout_weight="1"
         android:layout_marginLeft="5dp"
-        android:textColorHint="#CFD8DC"
+        android:textColorHint="#5E611A9E"
         android:textColor="#020F86"
         android:hint="Write a message..."
         android:id="@+id/messageArea"
@@ -22,8 +22,8 @@
         android:layout_width="match_parent"
         android:layout_height="50dp"
         android:layout_weight="4"
-        android:padding="4dp"
-        android:tint="#00042E"
-        android:src="@android:drawable/ic_menu_send"
+        android:padding="5dp"
+        android:tint="#020F86"
+        android:src="@drawable/send_ico"
         android:id="@+id/sendButton"/>
 </LinearLayout>
