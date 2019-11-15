@@ -1,6 +1,9 @@
 package com.androidchatapp;
 
+import android.annotation.SuppressLint;
+import android.graphics.Color;
 import android.os.Bundle;
+import android.text.Html;
 import android.view.Gravity;
 import android.view.View;
 import android.view.ViewGroup;
@@ -67,10 +70,12 @@ public class Chat extends AppCompatActivity {
                 String userName = map.get("user").toString();
 
                 if(userName.equals(UserDetails.username)){
-                    addMessageBox("You:-\n" + message, 1);
+                    String text = "You <font color='red'>red</font>";
+
+                    addMessageBox("" + message, 1);
                 }
                 else{
-                    addMessageBox(UserDetails.chatWith + ":-\n" + message, 2);
+                    addMessageBox(""+ message, 2);
                 }
             }
 
@@ -104,12 +109,17 @@ public class Chat extends AppCompatActivity {
         lp2.weight = 1.0f;
 
         if(type == 1) {
-            lp2.gravity = Gravity.LEFT;
-            textView.setBackgroundResource(R.drawable.bubble_in);
+            lp2.gravity = Gravity.RIGHT;
+            textView.setTextColor(Color.parseColor("#ffffff"));
+            textView.setBackgroundResource(R.drawable.msg_out);
+
+            lp2.topMargin=12;
+
         }
         else{
-            lp2.gravity = Gravity.RIGHT;
-            textView.setBackgroundResource(R.drawable.bubble_out);
+            lp2.gravity = Gravity.LEFT;
+            textView.setTextColor(Color.parseColor("#03A9F4"));
+            textView.setBackgroundResource(R.drawable.msg_in);
         }
         textView.setLayoutParams(lp2);
         layout.addView(textView);

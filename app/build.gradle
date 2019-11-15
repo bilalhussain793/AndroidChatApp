@@ -29,4 +29,4 @@ dependencies {
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.1.1'
     implementation 'com.firebase:firebase-client-android:2.5.2+'
     implementation 'com.android.volley:volley:1.1.0'
-}
+} 

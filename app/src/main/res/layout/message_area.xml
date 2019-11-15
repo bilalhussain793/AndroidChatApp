@@ -4,7 +4,8 @@
     android:layout_height="match_parent"
     android:background="@drawable/msged"
     android:gravity="center"
-    android:orientation="horizontal">
+    android:orientation="horizontal"
+    android:weightSum="5">
 
     <EditText
         android:layout_width="match_parent"
@@ -22,8 +23,8 @@
         android:layout_width="match_parent"
         android:layout_height="50dp"
         android:layout_weight="4"
-        android:padding="5dp"
-        android:tint="#020F86"
+        android:padding="2dp"
+        android:tint="#673AB7"
         android:src="@drawable/send_ico"
         android:id="@+id/sendButton"/>
 </LinearLayout>
